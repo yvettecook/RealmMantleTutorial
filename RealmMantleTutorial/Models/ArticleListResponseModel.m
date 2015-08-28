@@ -8,7 +8,7 @@
 
 #import "ArticleListResponseModel.h"
 
-@class ArticleModel
+@class ArticleModel;
 
 @implementation ArticleListResponseModel
 
@@ -16,7 +16,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"articles" : @"response.docs"
+             @"articles" : @"response.docs",
              @"status" : @"status"
              };
 }

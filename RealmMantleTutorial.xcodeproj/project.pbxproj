@@ -20,6 +20,7 @@
 		A5186ED41B905E7D00947C93 /* ArticleListRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186ED31B905E7D00947C93 /* ArticleListRequestModel.m */; };
 		A5186ED71B90632900947C93 /* ArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186ED61B90632900947C93 /* ArticleModel.m */; };
 		A5186EDA1B90643400947C93 /* ArticleListResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186ED91B90643400947C93 /* ArticleListResponseModel.m */; };
+		A5186EE01B90884A00947C93 /* ArticleRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186EDF1B90884A00947C93 /* ArticleRealm.m */; };
 		CCA2D3723B371E5B4BFA352A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8107B6E89CBB8F43181B606A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		A5186ED61B90632900947C93 /* ArticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleModel.m; path = Models/ArticleModel.m; sourceTree = "<group>"; };
 		A5186ED81B90643400947C93 /* ArticleListResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleListResponseModel.h; path = Models/ArticleListResponseModel.h; sourceTree = "<group>"; };
 		A5186ED91B90643400947C93 /* ArticleListResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleListResponseModel.m; path = Models/ArticleListResponseModel.m; sourceTree = "<group>"; };
+		A5186EDE1B90884A00947C93 /* ArticleRealm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleRealm.h; path = Models/ArticleRealm.h; sourceTree = "<group>"; };
+		A5186EDF1B90884A00947C93 /* ArticleRealm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleRealm.m; path = Models/ArticleRealm.m; sourceTree = "<group>"; };
 		A708D7AB63670CF89D0C8D59 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +188,8 @@
 				A5186ED61B90632900947C93 /* ArticleModel.m */,
 				A5186ED81B90643400947C93 /* ArticleListResponseModel.h */,
 				A5186ED91B90643400947C93 /* ArticleListResponseModel.m */,
+				A5186EDE1B90884A00947C93 /* ArticleRealm.h */,
+				A5186EDF1B90884A00947C93 /* ArticleRealm.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				A5186EA91B904F6100947C93 /* MasterViewController.m in Sources */,
 				A5186EA31B904F6100947C93 /* main.m in Sources */,
 				A5186EDA1B90643400947C93 /* ArticleListResponseModel.m in Sources */,
+				A5186EE01B90884A00947C93 /* ArticleRealm.m in Sources */,
 				A5186ED41B905E7D00947C93 /* ArticleListRequestModel.m in Sources */,
 				A5186ED71B90632900947C93 /* ArticleModel.m in Sources */,
 				A5186EAC1B904F6100947C93 /* DetailViewController.m in Sources */,
