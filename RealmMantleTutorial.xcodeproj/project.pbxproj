@@ -15,6 +15,9 @@
 		A5186EB11B904F6100947C93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5186EB01B904F6100947C93 /* Images.xcassets */; };
 		A5186EB41B904F6100947C93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5186EB21B904F6100947C93 /* LaunchScreen.xib */; };
 		A5186EC01B904F6100947C93 /* RealmMantleTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186EBF1B904F6100947C93 /* RealmMantleTutorialTests.m */; };
+		A5186ECB1B9052BA00947C93 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186ECA1B9052BA00947C93 /* SessionManager.m */; };
+		A5186ECF1B905D7400947C93 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186ECE1B905D7400947C93 /* APIManager.m */; };
+		CCA2D3723B371E5B4BFA352A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8107B6E89CBB8F43181B606A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29DCD9714ECC096A7D176ECB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8107B6E89CBB8F43181B606A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5186E9D1B904F6100947C93 /* RealmMantleTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmMantleTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5186EA11B904F6100947C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5186EA21B904F6100947C93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +48,11 @@
 		A5186EB91B904F6100947C93 /* RealmMantleTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmMantleTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5186EBE1B904F6100947C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5186EBF1B904F6100947C93 /* RealmMantleTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmMantleTutorialTests.m; sourceTree = "<group>"; };
+		A5186ECA1B9052BA00947C93 /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SessionManager.m; path = Networking/SessionManager.m; sourceTree = "<group>"; };
+		A5186ECC1B9052DA00947C93 /* SessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SessionManager.h; path = Networking/SessionManager.h; sourceTree = "<group>"; };
+		A5186ECD1B905D6500947C93 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = APIManager.h; path = Networking/APIManager.h; sourceTree = "<group>"; };
+		A5186ECE1B905D7400947C93 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIManager.m; path = Networking/APIManager.m; sourceTree = "<group>"; };
+		A708D7AB63670CF89D0C8D59 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA2D3723B371E5B4BFA352A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		326BD788B0A578079206B1CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8107B6E89CBB8F43181B606A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F1F8B326840475ED0EAD4B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29DCD9714ECC096A7D176ECB /* Pods.debug.xcconfig */,
+				A708D7AB63670CF89D0C8D59 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A5186E941B904F6100947C93 = {
 			isa = PBXGroup;
 			children = (
 				A5186E9F1B904F6100947C93 /* RealmMantleTutorial */,
 				A5186EBC1B904F6100947C93 /* RealmMantleTutorialTests */,
 				A5186E9E1B904F6100947C93 /* Products */,
+				7F1F8B326840475ED0EAD4B0 /* Pods */,
+				326BD788B0A578079206B1CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +120,8 @@
 				A5186EA81B904F6100947C93 /* MasterViewController.m */,
 				A5186EAA1B904F6100947C93 /* DetailViewController.h */,
 				A5186EAB1B904F6100947C93 /* DetailViewController.m */,
+				A5186ED11B905E1C00947C93 /* Models */,
+				A5186EC91B90524E00947C93 /* Networking */,
 				A5186EAD1B904F6100947C93 /* Main.storyboard */,
 				A5186EB01B904F6100947C93 /* Images.xcassets */,
 				A5186EB21B904F6100947C93 /* LaunchScreen.xib */,
@@ -124,6 +156,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A5186EC91B90524E00947C93 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A5186ECC1B9052DA00947C93 /* SessionManager.h */,
+				A5186ECA1B9052BA00947C93 /* SessionManager.m */,
+				A5186ECD1B905D6500947C93 /* APIManager.h */,
+				A5186ECE1B905D7400947C93 /* APIManager.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		A5186ED11B905E1C00947C93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5186EC31B904F6100947C93 /* Build configuration list for PBXNativeTarget "RealmMantleTutorial" */;
 			buildPhases = (
+				A8676E406FED7AA2ECBBC798 /* Check Pods Manifest.lock */,
 				A5186E991B904F6100947C93 /* Sources */,
 				A5186E9A1B904F6100947C93 /* Frameworks */,
 				A5186E9B1B904F6100947C93 /* Resources */,
+				4E6B085B8BBEBFC8E60430CB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,12 +271,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E6B085B8BBEBFC8E60430CB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8676E406FED7AA2ECBBC798 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5186E991B904F6100947C93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5186ECB1B9052BA00947C93 /* SessionManager.m in Sources */,
 				A5186EA61B904F6100947C93 /* AppDelegate.m in Sources */,
+				A5186ECF1B905D7400947C93 /* APIManager.m in Sources */,
 				A5186EA91B904F6100947C93 /* MasterViewController.m in Sources */,
 				A5186EA31B904F6100947C93 /* main.m in Sources */,
 				A5186EAC1B904F6100947C93 /* DetailViewController.m in Sources */,
@@ -351,6 +438,7 @@
 		};
 		A5186EC41B904F6100947C93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29DCD9714ECC096A7D176ECB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmMantleTutorial/Info.plist;
@@ -361,6 +449,7 @@
 		};
 		A5186EC51B904F6100947C93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A708D7AB63670CF89D0C8D59 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmMantleTutorial/Info.plist;
@@ -422,6 +511,7 @@
 				A5186EC51B904F6100947C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5186EC61B904F6100947C93 /* Build configuration list for PBXNativeTarget "RealmMantleTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +520,7 @@
 				A5186EC81B904F6100947C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
