@@ -6,8 +6,12 @@
 //  Copyright (c) 2015 Yvette. All rights reserved.
 //
 
-#ifndef RealmMantleTutorial_APIManager_h
-#define RealmMantleTutorial_APIManager_h
+#import "SessionManager.h"
+#import "ArticleListRequestModel.h"
+#import "ArticleListResponseModel.h"
 
+@interface APIManager : SessionManager
 
-#endif
+- (NSURLSessionDataTask *)getArticlesWithRequestModel:(ArticleListRequestModel *)requestModel success:(void (^)(ArticleListResponseModel *responseModel))success failure:(void (^)(NSError *error))failure;
+
+@end
