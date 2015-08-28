@@ -17,6 +17,7 @@
 		A5186EC01B904F6100947C93 /* RealmMantleTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186EBF1B904F6100947C93 /* RealmMantleTutorialTests.m */; };
 		A5186ECB1B9052BA00947C93 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186ECA1B9052BA00947C93 /* SessionManager.m */; };
 		A5186ECF1B905D7400947C93 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186ECE1B905D7400947C93 /* APIManager.m */; };
+		A5186ED41B905E7D00947C93 /* ArticleListRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5186ED31B905E7D00947C93 /* ArticleListRequestModel.m */; };
 		CCA2D3723B371E5B4BFA352A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8107B6E89CBB8F43181B606A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		A5186ECC1B9052DA00947C93 /* SessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SessionManager.h; path = Networking/SessionManager.h; sourceTree = "<group>"; };
 		A5186ECD1B905D6500947C93 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = APIManager.h; path = Networking/APIManager.h; sourceTree = "<group>"; };
 		A5186ECE1B905D7400947C93 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIManager.m; path = Networking/APIManager.m; sourceTree = "<group>"; };
+		A5186ED21B905E6800947C93 /* ArticleListRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ArticleListRequestModel.h; path = Models/ArticleListRequestModel.h; sourceTree = "<group>"; };
+		A5186ED31B905E7D00947C93 /* ArticleListRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleListRequestModel.m; path = Models/ArticleListRequestModel.m; sourceTree = "<group>"; };
 		A708D7AB63670CF89D0C8D59 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +173,8 @@
 		A5186ED11B905E1C00947C93 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A5186ED21B905E6800947C93 /* ArticleListRequestModel.h */,
+				A5186ED31B905E7D00947C93 /* ArticleListRequestModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				A5186ECF1B905D7400947C93 /* APIManager.m in Sources */,
 				A5186EA91B904F6100947C93 /* MasterViewController.m in Sources */,
 				A5186EA31B904F6100947C93 /* main.m in Sources */,
+				A5186ED41B905E7D00947C93 /* ArticleListRequestModel.m in Sources */,
 				A5186EAC1B904F6100947C93 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
